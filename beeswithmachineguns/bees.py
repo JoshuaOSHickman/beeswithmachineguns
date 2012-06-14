@@ -245,7 +245,7 @@ def _print_results(results):
 
     complete_results = [r['requests_per_second'] for r in complete_bees]
     mean_requests = sum(complete_results)
-    print '     Requests per second:\t%f [#/sec] (mean)' % mean_requests
+    print '     Requests per second:\t%f [#/sec] (total)' % mean_requests
 
     complete_results = [r['ms_per_request'] for r in complete_bees]
     mean_response = sum(complete_results) / num_complete_bees
